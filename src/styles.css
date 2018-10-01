@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "assets/fontawesome/css/all.css";
+@import "assets/css/components.css";
+@import "assets/css/app-style.css";
+@import "assets/css/common.css";
+
+body{
+  background-color: #f3f3f3;
+  color: #797979;
+}

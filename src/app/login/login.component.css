@@ -1,0 +1,28 @@
+.login-box{
+  background: linear-gradient(to bottom, #0000ff -1%, #66ff99 90%);
+}
+.login-box .title{
+  font-weight: bold;
+  font-size: 1.85rem
+}
+
+.login-box .socialIcon{
+  padding: 8px 17px;
+  border-radius: 24px;
+  font-size: 28px;
+  margin-right: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.login-box .socialIcon.fb{
+  background-color: #31319c;
+}
+.login-box .socialIcon.twitter{
+  background-color: #1caaef;
+  padding: 8px 10px;
+}
+.login-box .socialIcon.google{
+  background-color: #ec3333;
+  padding: 8px 10px;
+}

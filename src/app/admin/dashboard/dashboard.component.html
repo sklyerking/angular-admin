@@ -1,0 +1,178 @@
+<div class="row">
+  <div class="col-lg-3 col-md-6">
+      <div class="card-box widget-box-two widget-two-info">
+          <i class="fal fa-chart-area widget-two-icon"></i>
+          <div class="wigdet-two-content text-white">
+              <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="Statistics">Statistics</p>
+              <h2 class="text-white"><span data-plugin="counterup">5282</span> <small><i class="far fa-arrow-up f-s-18 m-l-5 text-success"></i></small></h2>
+              <p class="m-0"><b>Last:</b> 30.4k</p>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+      <div class="card-box widget-box-two widget-two-primary">
+          <i class="fal fa-layer-group widget-two-icon"></i>
+          <div class="wigdet-two-content text-white">
+              <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="User This Month">User This Month</p>
+              <h2 class="text-white"><span data-plugin="counterup">52410</span> <small><i class="far fa-arrow-up f-s-18 m-l-5 text-success"></i></small></h2>
+              <p class="m-0"><b>Last:</b> 40.33k</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6">
+      <div class="card-box widget-box-two widget-two-danger">
+          <i class="fal fa-broadcast-tower widget-two-icon"></i>
+          <div class="wigdet-two-content text-white">
+              <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="Statistics">Statistics</p>
+              <h2 class="text-white"><span data-plugin="counterup">6352</span> <small><i class="far fa-arrow-up f-s-18 m-l-5 text-success"></i></small></h2>
+              <p class="m-0"><b>Last:</b> 30.4k</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6">
+      <div class="card-box widget-box-two widget-two-success">
+          <i class="fal fa-frown widget-two-icon"></i>
+          <div class="wigdet-two-content text-white">
+              <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="User Today">User Today</p>
+              <h2 class="text-white"><span data-plugin="counterup">895</span> <small><i class="far fa-arrow-down f-s-18 m-l-5 text-danger"></i></small></h2>
+              <p class="m-0"><b>Last:</b> 1250</p>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+
+<div class="row m-b-20">
+  <div class="col-6">
+    <highcharts-chart
+    [Highcharts]="Highcharts"
+    [options]="chartOptions"
+
+    style="width: 100%; height: 400px; display: block;"
+    ></highcharts-chart>
+  </div>
+  <div class="col-6">
+    <highcharts-chart
+    [Highcharts]="Highcharts"
+    [options]="chartOptions1"
+
+    style="width: 100%; height: 400px; display: block;"
+    ></highcharts-chart>
+  </div>
+</div>
+
+
+
+<div class="row m-b-20">
+
+    <div class="col-md-4">
+        <div class="panel panel-color panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Messages</h3>
+            </div>
+            <div class="panel-body">
+                jhbjhbh
+            </div>
+        </div>
+        <!-- end panel -->
+
+    </div>
+    <!-- end col -->
+
+    <div class="col-md-8">
+        <div class="panel panel-color panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Recent Users</h3>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table table-hover m-0">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>User Name</th>
+                                <th>Phone</th>
+                                <th>Location</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <span class="avatar-sm-box bg-primary">L</span>
+                                </th>
+                                <td>
+                                    <h5 class="m-0">Louis Hansen</h5>
+                                    <p class="m-0 text-muted font-13"><small>Web designer</small></p>
+                                </td>
+                                <td>+12 3456 789</td>
+                                <td>USA</td>
+                                <td>07/08/2016</td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <span class="avatar-sm-box bg-primary">C</span>
+                                </th>
+                                <td>
+                                    <h5 class="m-0">Craig Hause</h5>
+                                    <p class="m-0 text-muted font-13"><small>Programmer</small></p>
+                                </td>
+                                <td>+89 345 6789</td>
+                                <td>Canada</td>
+                                <td>29/07/2016</td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <span class="avatar-sm-box bg-success">E</span>
+                                </th>
+                                <td>
+                                    <h5 class="m-0">Edward Grimes</h5>
+                                    <p class="m-0 text-muted font-13"><small>Founder</small></p>
+                                </td>
+                                <td>+12 29856 256</td>
+                                <td>Brazil</td>
+                                <td>22/07/2016</td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <span class="avatar-sm-box bg-pink">B</span>
+                                </th>
+                                <td>
+                                    <h5 class="m-0">Bret Weaver</h5>
+                                    <p class="m-0 text-muted font-13"><small>Web designer</small></p>
+                                </td>
+                                <td>+00 567 890</td>
+                                <td>USA</td>
+                                <td>20/07/2016</td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <span class="avatar-sm-box bg-dark">M</span>
+                                </th>
+                                <td>
+                                    <h5 class="m-0">Mark</h5>
+                                    <p class="m-0 text-muted font-13"><small>Web design</small></p>
+                                </td>
+                                <td>+91 123 456</td>
+                                <td>India</td>
+                                <td>07/07/2016</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div> <!-- table-responsive -->
+            </div> <!-- end panel body -->
+        </div>
+        <!-- end panel -->
+    </div>
+    <!-- end col -->
+
+  </div>

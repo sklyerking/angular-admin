@@ -1,0 +1,28 @@
+html, body {
+  height:100%;
+  font-size: 14px;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #4069ff;
+}
+
+.b-r-4{
+  border-radius: 4px !important;
+}
+.mat-form{
+  width: 100%;
+}
+.width-100{
+  width: 100%;
+}
+
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}

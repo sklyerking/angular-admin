@@ -1,0 +1,29 @@
+
+.nav-brand {
+    width: 215px;
+    text-align: center;
+}
+.topnav-icon {
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+}
+.fix-nav{
+  position: fixed;
+  z-index: 999;
+}
+.nav-spacer {
+    flex: 1 1 auto;
+}
+
+.visible-md {
+    display: none;
+}
+.visible-sm {
+    display: none;
+}
+
+.user_icon{
+  font-size: 45px;
+  cursor: pointer;
+}
