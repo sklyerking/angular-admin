@@ -1,0 +1,16 @@
+
+.button-row{
+  margin-bottom: 10px;
+}
+.button-row button,
+.button-row a {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.material-button h6 , .custom-button h6{font-weight: 600; color: inherit;}
+
+.custom-button .button-row button,
+.custom-button .button-row a {
+  margin-bottom: 8px;
+}

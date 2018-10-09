@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 @NgModule({
   declarations: [
     AppComponent
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,LoadingBarRouterModule,
+    MalihuScrollbarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,5 +2,17 @@
 
 .main-container{
   margin-left: 225px;
-  padding:85px 15px 10px 15px;
+  padding:85px 17px 10px 15px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .main-container{
+    margin-left: 0px;
+  }
+  .page-heading{
+    display: none;
+    visibility: hidden;
+  }
 }

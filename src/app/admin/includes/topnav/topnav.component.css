@@ -22,6 +22,24 @@
 .visible-sm {
     display: none;
 }
+@media screen and (max-width: 992px) {
+    .visible-md {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .visible-sm {
+        display: block;
+    }
+    .nav-brand {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hidden-sm {
+        display: none;
+    }
+}
 
 .user_icon{
   font-size: 45px;

@@ -1,0 +1,101 @@
+
+/* =============
+  == MAterial List==
+   - Buttons
+   - Panels
+   - Portlets
+   - Checkbox and radio
+   - Modals
+   - Tabs
+   - Progressbars
+   - Notifications
+   - Alerts
+   - Carousel
+   - Sweet Alert
+   - Widgets
+   - Nestable
+   - Rating
+   - Calendar
+   - Form
+   - Tables
+   - Charts
+============= */
+
+/*  BUTTON */
+.mat-fab.mat-pink, .mat-flat-button.mat-pink, .mat-mini-fab.mat-pink, .mat-raised-button.mat-pink {
+    background-color: #E91E63; color: #FFFFFF;
+}
+.mat-fab.mat-purple, .mat-flat-button.mat-purple, .mat-mini-fab.mat-purple, .mat-raised-button.mat-purple {
+    background-color: #9C27B0; color: #FFFFFF;
+}
+.mat-fab.mat-blue, .mat-flat-button.mat-blue, .mat-mini-fab.mat-blue, .mat-raised-button.mat-blue {
+    background-color: #2196F3; color: #FFFFFF;
+}
+.mat-fab.mat-teal, .mat-flat-button.mat-teal, .mat-mini-fab.mat-teal, .mat-raised-button.mat-teal {
+    background-color: #009688; color: #FFFFFF;
+}
+.mat-fab.mat-yellow, .mat-flat-button.mat-yellow, .mat-mini-fab.mat-yellow, .mat-raised-button.mat-yellow {
+    background-color: #FFEB3B;
+}
+.mat-fab.mat-green, .mat-flat-button.mat-green, .mat-mini-fab.mat-green, .mat-raised-button.mat-green {
+    background-color: #4CAF50; color: #FFFFFF;
+}
+.mat-fab.mat-orange, .mat-flat-button.mat-orange, .mat-mini-fab.mat-orange, .mat-raised-button.mat-orange {
+    background-color: #FF5722; color: #FFFFFF;
+}
+.mat-fab.mat-brown, .mat-flat-button.mat-brown, .mat-mini-fab.mat-brown, .mat-raised-button.mat-brown {
+    background-color: #795548; color: #FFFFFF;
+}
+.mat-fab.mat-gray, .mat-flat-button.mat-gray, .mat-mini-fab.mat-gray, .mat-raised-button.mat-gray {
+    background-color: #9E9E9E; color: #FFFFFF;
+}
+
+.mat-button.mat-pink, .mat-icon-button.mat-pink, .mat-stroked-button.mat-pink { color: #E91E63; }
+.mat-button.mat-purple, .mat-icon-button.mat-purple, .mat-stroked-button.mat-purple { color: #9C27B0; }
+.mat-button.mat-blue, .mat-icon-button.mat-blue, .mat-stroked-button.mat-blue { color: #2196F3; }
+.mat-button.mat-teal, .mat-icon-button.mat-teal, .mat-stroked-button.mat-teal { color: #009688; }
+.mat-button.mat-yellow, .mat-icon-button.mat-yellow, .mat-stroked-button.mat-yellow { color: #FFEB3B; }
+.mat-button.mat-green, .mat-icon-button.mat-green, .mat-stroked-button.mat-green { color: #4CAF50; }
+.mat-button.mat-orange, .mat-icon-button.mat-orange, .mat-stroked-button.mat-orange { color: #FF5722; }
+.mat-button.mat-brown, .mat-icon-button.mat-brown, .mat-stroked-button.mat-brown { color: #795548; }
+.mat-button.mat-gray, .mat-icon-button.mat-gray, .mat-stroked-button.mat-gray { color: #9E9E9E; }
+
+.mat-button.mat-pink .mat-button-focus-overlay, .mat-icon-button.mat-pink .mat-button-focus-overlay, .mat-stroked-button.mat-pink .mat-button-focus-overlay
+{ background-color: rgb(233, 30, 99,.12);
+}
+.mat-button.mat-purple .mat-button-focus-overlay, .mat-icon-button.mat-purple .mat-button-focus-overlay, .mat-stroked-button.mat-purple .mat-button-focus-overlay
+{ background-color: rgb(156, 39, 176,.12);
+}
+.mat-button.mat-blue .mat-button-focus-overlay, .mat-icon-button.mat-blue .mat-button-focus-overlay, .mat-stroked-button.mat-blue .mat-button-focus-overlay
+{ background-color: rgb(33, 150, 243,.12);
+}
+.mat-button.mat-teal .mat-button-focus-overlay, .mat-icon-button.mat-teal .mat-button-focus-overlay, .mat-stroked-button.mat-teal .mat-button-focus-overlay
+{ background-color: rgb(0, 150, 136,.12);
+}
+.mat-button.mat-yellow .mat-button-focus-overlay, .mat-icon-button.mat-yellow .mat-button-focus-overlay, .mat-stroked-button.mat-yellow .mat-button-focus-overlay
+{ background-color: rgb(255, 235, 59,.12);
+}
+.mat-button.mat-green .mat-button-focus-overlay, .mat-icon-button.mat-green .mat-button-focus-overlay, .mat-stroked-button.mat-green .mat-button-focus-overlay
+{ background-color: rgb(76, 175, 80,.12);
+}
+.mat-button.mat-orange .mat-button-focus-overlay, .mat-icon-button.mat-orange .mat-button-focus-overlay, .mat-stroked-button.mat-orange .mat-button-focus-overlay
+{ background-color: rgb(255, 87, 34,.12);
+}
+.mat-button.mat-brown .mat-button-focus-overlay, .mat-icon-button.mat-brown .mat-button-focus-overlay, .mat-stroked-button.mat-brown .mat-button-focus-overlay
+{ background-color: rgb(121, 85, 72,.12);
+}
+.mat-button.mat-gray .mat-button-focus-overlay, .mat-icon-button.mat-gray .mat-button-focus-overlay, .mat-stroked-button.mat-gray .mat-button-focus-overlay
+{ background-color: rgb(158, 158, 158,.12);
+}
+
+
+
+/* PANEL */
+
+.mat-card.panel{
+  padding: 0px;
+  border:0px;
+}
+.mat-card.panel .mat-card-content{
+  padding: 16px;
+}
