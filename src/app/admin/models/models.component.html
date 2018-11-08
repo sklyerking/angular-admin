@@ -1,0 +1,233 @@
+<div class="row page-title-box">
+  <mat-card class="col-md-12">
+    <h4 class="page-title">Models</h4>
+    <ol class="breadcrumb p-0 m-0">
+        <li>
+            <a>User Interface</a>
+        </li>
+        <li class="active">
+            Model
+        </li>
+    </ol>
+  </mat-card>
+</div>
+<div class="row m-0 m-t-20 material-button">
+    <h5 class="width-100">Default</h5>
+    <div class="col-sm-12">
+      <mat-card >
+          <button type="button" class="btn btn-primary m-r-20" (click)="defaultModal.show()">Default modal</button>
+          <button type="button" class="btn btn-primary m-r-20" (click)="staticModal.show()">Static modal</button>
+          <button type="button" class="btn btn-primary m-r-20" (click)="showModal()">Modal From Component</button>
+          <button type="button" class="btn btn-primary m-r-20" (click)="smallModal.show()">Small Modal</button>
+          <button type="button" class="btn btn-primary m-r-20" (click)="largeModal.show()">Large Modal</button>
+          <button type="button" class="btn btn-primary m-r-20" (click)="fullModal.show()">Full Width Modal</button>
+          <button type="button" class="btn btn-primary m-r-20" (click)="panelModal.show()">Panel Modal</button>
+          <button type="button" class="btn btn-primary m-r-20 m-t-20" (click)="middelModal.show()">In Middel Modal</button>
+
+      </mat-card>
+    </div>
+</div>
+
+
+<div class="row m-0 m-t-20 ">
+    <h5 class="width-100">Amination</h5>
+    <div class="col-sm-12">
+      <mat-card >
+          <button type="button" class="btn btn-primary m-r-20" (click)="fadeindownModal.show()">Fade In Down modal</button>
+
+      </mat-card>
+    </div>
+</div>
+
+
+<div class="row m-0 m-t-20 ">
+    <h5 class="width-100">Material Dailog</h5>
+    <div class="col-sm-12">
+      <mat-card >
+          <button type="button" class="btn btn-primary m-r-20" (click)="defaultDialog()" >Default dailog</button>
+          <button type="button" class="btn btn-primary m-r-20" (click)="setWidthHeightDialog()" >Set Widht Height</button>
+          <button type="button" class="btn btn-primary m-r-20" (click)="headerDialog()" >Header dailog</button>
+          <button type="button" class="btn btn-primary m-r-20" (click)="actionDialog()" >Action dailog</button>
+          <button type="button" class="btn btn-primary m-r-20" (click)="dataDialog()" >Pass Data dailog</button>
+          <button type="button" class="btn btn-primary m-r-20" (click)="getdataDialog()" >Get dailog data</button>
+
+          <p *ngIf="animal" class=" m-t-20 ">Your favorite animal : {{animal}}</p>
+      </mat-card>
+    </div>
+</div>
+
+
+<div class="modal fade" bsModal #defaultModal="bs-modal"
+     tabindex="-1" role="dialog" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-static-name" class="modal-title pull-left">Default modal</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="defaultModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is default a modal. <br>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+           ex ea commodo consequat.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
+     tabindex="-1" role="dialog" aria-labelledby="dialog-static-name">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-static-name" class="modal-title pull-left">Static modal</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is static modal, backdrop click will not close it.
+        Click <b>&times;</b> to close modal.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="isModalShown" [config]="{ show: true }" (onHidden)="onHidden()" bsModal #autoShownModal="bs-modal"
+     class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-auto-name">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-auto-name" class="modal-title pull-left">shown modal by component</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="hideModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>I am a modal that is shown right after initialization!</p>
+        <p>I wasn't present in DOM until you clicked the button</p>
+        <p>When you close me, I'll be removed from the DOM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" bsModal #smallModal="bs-modal"
+     tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-static-name" class="modal-title pull-left">Default modal</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="smallModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is default a modal. <br>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+           ex ea commodo consequat.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" bsModal #largeModal="bs-modal"
+     tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-static-name" class="modal-title pull-left">Default modal</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="largeModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is default a modal. <br>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+           ex ea commodo consequat.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" bsModal #fullModal="bs-modal"
+     tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-full">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 id="dialog-static-name" class="modal-title pull-left">Full Width modal</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="fullModal.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          This is default a modal. <br>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+             ex ea commodo consequat.
+        </div>
+      </div>
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" bsModal #panelModal="bs-modal"
+     tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content p-0 b-0">
+            <div class="panel panel-color panel-primary">
+                <div class="panel-heading">
+                    <button type="button" class="close pull-right text-white m-t--5" aria-label="Close" (click)="panelModal.hide()">
+                      <span aria-hidden="true">&times;</span></button>
+                    <h3 class="panel-title">Panel Primary</h3>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade middel" bsModal #middelModal="bs-modal"
+     tabindex="-1" role="dialog" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-static-name" class="modal-title pull-left">Default modal</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="middelModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is default a modal. <br>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+           ex ea commodo consequat.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Animate   -->
+
+<div class="modal animated fadeInDown middel" bsModal #fadeindownModal="bs-modal"
+     tabindex="-1" role="dialog" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-static-name" class="modal-title pull-left">Default modal</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="fadeindownModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is default a modal. <br>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+           ex ea commodo consequat.
+      </div>
+    </div>
+  </div>
+</div>

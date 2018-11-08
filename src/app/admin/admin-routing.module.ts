@@ -22,6 +22,14 @@ const routes: Routes = [
         {
             path: 'panel',
             loadChildren: './panel/panel.module#PanelModule'
+        },
+        {
+            path: 'portlet',
+            loadChildren: './portlet/portlet.module#PortletModule'
+        },
+        {
+            path: 'models',
+            loadChildren: './models/models.module#ModelsModule'
         }
      ]
   }

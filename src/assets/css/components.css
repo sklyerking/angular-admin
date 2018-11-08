@@ -599,6 +599,17 @@ input:focus {
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top: 0 !important;
 }
+.panel-heading {
+    margin: -1px;
+}
+.panel-footer {
+    background: #f3f3f3;
+    border-top: 0;
+    margin: -1px;
+    padding: 10px 15px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
 /* ===========
    Portlets
  =============*/

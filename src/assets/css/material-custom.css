@@ -99,3 +99,53 @@
 .mat-card.panel .mat-card-content{
   padding: 16px;
 }
+.panel .mat-toolbar{
+  border-radius: 2px 2px 0px 0px;
+  min-height: 50px;
+  height: auto;
+}
+
+.panel.panel-primary .mat-toolbar{
+  background-color: #3f51b5;
+  color: #FFF;
+}
+.panel.panel-accent .mat-toolbar{
+  background-color: #ff4081;
+  color: #FFF;
+}
+.panel.panel-warn .mat-toolbar{
+  background-color: #f44336;
+  color: #FFF;
+}
+.panel.panel-pink .mat-toolbar{
+  background-color: #E91E63;
+  color: #FFF;
+}
+.panel.panel-purple .mat-toolbar{
+  background-color: #9C27B0;
+  color: #FFF;
+}
+.panel.panel-blue .mat-toolbar{
+  background-color: #2196F3;
+  color: #FFF;
+}
+.panel.panel-teal .mat-toolbar{
+  background-color: #009688;
+  color: #FFF;
+}
+.panel.panel-green .mat-toolbar{
+  background-color: #4CAF50;
+  color: #FFF;
+}
+.panel.panel-brown .mat-toolbar{
+  background-color: #795548;
+  color: #FFF;
+}
+
+
+/* Model */
+.mat-dialog-container .heading{
+    margin-bottom: 5px;
+    border-bottom: 2px solid #e9ecef;
+    padding: 0px 0px 15px 0px;
+}
